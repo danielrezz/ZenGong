@@ -7,6 +7,9 @@ import './random_affirmation';
 import {Howl} from 'howler';
 import droneSound from './drone.mp3';
 import { useSpring, animated } from 'react-spring';
+import treePic from './trees.png';
+import waterPic from './water.png';
+import cloudPic from './clouds.png';
 
 function App() {
 
@@ -37,8 +40,13 @@ function App() {
   });
 
   return (
-    <div className="App">
-      <div className="bg-image" />
+    <div className="App" >
+      <div style={{background: `url(${treePic})`, 
+          backgroundSize: "cover",
+          backgroundPosition: "center"}} 
+          className="bg-image">
+      <h1>Zen Gong</h1>
+      {/* <div className="bg-image"/> */}
       <animated.p id="quote-text" style={props}>{data}</animated.p>
       <button
         onClick={handleClick}
@@ -46,6 +54,7 @@ function App() {
       >
         <Gong />
       </button>
+      </div>
     </div>
   );
 }

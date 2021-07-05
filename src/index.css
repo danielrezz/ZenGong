@@ -1,5 +1,5 @@
 body {
-  margin: 0 !important;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,8 +12,8 @@ body {
   margin: auto;
   width: 100%;
   height: 100%;
-  background-image: url("./trees.png") !important;
-  background-size: 2000px !important;
+  /* background-image: url("./trees.png"); */
+  
 }
 
 code {
@@ -28,13 +28,14 @@ h1 {
   text-align: center !important;
   font-size: 8rem !important;
   font-family: 'Julee', cursive !important;
-  margin-bottom: 10px !important;
+  margin-bottom: -30px !important;
   text-shadow: 2px 2px 15px rgb(255, 255, 255);
 }
 
 #quote-text {
   color: rgb(0, 0, 0);
-  margin-top: 18px;
+  /* margin-top: 18px; */
+  width: auto;
   margin-bottom: 12px;
   display: flex !important;
   justify-content: center !important;
@@ -50,12 +51,12 @@ h1 {
   background: none;
 }
 
-#root .gong {
+#root {
+  /* position: fixed; */
   display: flex;
   justify-content: center;
   align-self: center;
   margin: auto;
-  margin-top: 40px;
   opacity: 0.9;
   /* width: 50%; */
 }
