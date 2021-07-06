@@ -13,7 +13,7 @@ import cloudPic from './clouds.png';
 
 function App() {
 
-  const [data, setData] = useState('Hit the gong for a positive message');
+  const [data, setData] = useState('Hit the gong to find some zen');
   const [flip, set] = useState(false)
   const props = useSpring({
     to: { opacity: 1 },
