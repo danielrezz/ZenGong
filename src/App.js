@@ -39,12 +39,14 @@ function App() {
     sound.play();
   });
 
+  let imageArray = [treePic, waterPic, cloudPic];
+
   return (
     <div className="App" >
-      <div style={{background: `url(${treePic})`, 
-          backgroundSize: "cover",
-          backgroundPosition: "center"}} 
-          className="bg-image">
+      <div
+          className="bg-image"
+          style={{background: `url(` + imageArray[Math.floor(Math.random() * imageArray.length)] + `)`}} 
+          >
       <h1>Zen Gong</h1>
       {/* <div className="bg-image"/> */}
       <animated.p id="quote-text" style={props}>{data}</animated.p>
